@@ -1,0 +1,569 @@
+/* Place your CSS styles in this file */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fffbf8;
+    width: 90%;
+    margin: auto;
+    color: #2f362f;
+    font-size: 1.1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.header {
+    grid-column: col-start / span 12;
+    padding: 10px;
+}
+
+.header>h1 {
+    text-align: center;
+    font-size: xxx-large;
+    color: #0d6a0b;
+}
+
+hr {
+    border: dashed #bc723d 2px;
+    width: 95%;
+}
+
+/* Nav Bar CSS */
+
+.nav-menu {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-menu li {
+    list-style-type: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    display: block;
+    width: 130px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0555aa;
+    font-weight: 700;
+}
+
+.nav-menu a:hover {
+    /* color: #9c3904; */
+    color: #fff;
+    background-color: #0555aa;
+    border-radius: 10px;
+}
+
+a {
+    color: #0555aa;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+a:hover {
+    color: #9c3904;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: col-start 1 / span 12;
+    gap: 10px;
+}
+
+.content>div {
+    padding: 20px;
+}
+
+.content li {
+    list-style-type: circle;
+}
+
+/* h1 heading for each page, below nav bar */
+
+.guide,
+.things,
+.food {
+    text-align: center;
+    grid-column: col-start / span 12;
+    color: #0d6a0b;
+}
+
+/* main images on each page */
+
+.bridge,
+.img-nil,
+.bigfan,
+.img-doodle {
+    max-width: 100%;
+    height: auto;
+    grid-column: col-start 1 / span 12;
+    border-radius: 15px;
+    margin: auto;
+}
+
+h2 {
+    text-decoration: underline dotted 2px #0d6a0b;
+    color: #0d6a0b;
+}
+
+h3 {
+    font-style: italic;
+    color: #0d6a0b;
+}
+
+.emphasize {
+    font-weight: 600;
+    color: #085a07;
+}
+
+/* all pages - image CSS */
+
+/*imgs floating right */
+.map-dublin,
+.img-tfi,
+.img-imma,
+.img-gaia,
+.img-zoo,
+.img-brew,
+.bread41,
+.borg,
+.richmond,
+.fan {
+    float: right;
+    margin: 5px 0 15px 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* imgs floating left */
+
+.img-plug,
+.img-garden,
+.vice,
+.elliots,
+.ch1,
+.liath,
+.dolier {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cathedral {
+    float: left;
+    margin: 10px 15px 8px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* imgs centered */
+
+.img-wonder,
+.img-eileen,
+.img-castle,
+.img-marsh,
+.img-bars {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Go to Top Button, code by w3schools */
+
+#myBtn {
+    /* Hidden by default */
+    display: none;
+    /* Fixed/sticky position */
+    position: fixed;
+    /* Place the button at the bottom of the page */
+    bottom: 20px;
+    /* Place the button 30px from the right */
+    right: 30px;
+    /* Make sure it does not overlap */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #b44b00;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+#myBtn:hover {
+    background-color: #0555aa;
+}
+
+/* CSS FOR INDEX.HTML /HOMEPAGE */
+
+#dublin-adventure {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    width: 60%;
+    margin: auto;
+}
+
+.about {
+    grid-column: 1 / span 12;
+}
+
+.essential {
+    grid-column: col-start / span 6;
+}
+
+.getting-around {
+    grid-column: col-start 7 / span 6;
+}
+
+/* Home Page Fare Table */
+
+table {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    border: solid #1c671c 1px;
+    border-collapse: separate;
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    padding: 7px;
+    text-align: center;
+    border: solid #1c671c 1px;
+
+}
+
+th {
+    background-color: #1b641b;
+    color: white;
+}
+
+td {
+    color: #323b32;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #ebf3eb;
+}
+
+tfoot {
+    font-size: 0.9rem;
+}
+
+/* END OF CSS FOR INDEX.HTML / HOMEPAGE, START OF THINGS-TO-DO.HTML */
+
+.museums {
+    display: grid;
+    grid-column: col-start 1 / span 12;
+    grid-template-columns: subgrid;
+}
+
+.museums>div {
+    padding: 15px;
+}
+
+.nature {
+    grid-column: col-start 1 / span 12;
+}
+
+.nat-gallery {
+    grid-column: col-start 1 / span 6;
+
+}
+
+iframe {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    margin: auto;
+}
+
+.nat-museum-imma {
+    grid-column: col-start 7 / span 6;
+
+}
+
+.historical {
+    grid-column: col-start 1 / span 6;
+}
+
+.libraries {
+    grid-column: col-start 7 / span 6;
+}
+
+/* End of CSS for Things-to-do, start of food-drinks */
+
+.cafes {
+    grid-column: col-start 1 / span 6;
+}
+
+.bakeries {
+    grid-column: col-start 7 / span 6;
+}
+
+.michelin,
+.bars {
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.michelin>div,
+.bars>div {
+    padding: 15px;
+}
+
+.michelin>h2,
+.bars>h2 {
+    grid-column: col-start 1 / span 12;
+}
+
+.star1 {
+    grid-column: col-start 1 / span 4;
+}
+
+.star2 {
+    grid-column: col-start 5 / span 4;
+}
+
+.star3 {
+    grid-column: col-start 9 / span 4;
+}
+
+.bib1 {
+    grid-column: col-start 1 / span 4;
+}
+
+.bib2 {
+    grid-column: col-start 5 / span 4;
+}
+
+.bib3 {
+    grid-column: col-start 9 / span 4;
+}
+
+.bar1 {
+    grid-column: col-start 1 / span 4;
+}
+
+.bar2 {
+    grid-column: col-start 5 / span 4;
+}
+
+.bar3 {
+    grid-column: col-start 9 / span 4;
+}
+
+.bar-hours {
+    grid-row: 3;
+}
+
+.suggest-form {
+    grid-column: col-start 1 / span 12;
+}
+
+.suggest-preface {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+form {
+    /* background-color: #ffffff; */
+    background-image: url(/images/rest-bar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fdfffafa;
+    background-blend-mode: screen;
+    border-radius: 20px;
+    border: #368a36 1px solid;
+    width: 50%;
+    height: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 2%;
+    overflow: auto;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.form-elem,
+.form-buttons {
+    justify-self: center;
+}
+
+h4 {
+    color: #084907;
+}
+
+fieldset {
+    border: #368a36 1px dashed;
+    padding: 20px 10px 20px 20px;
+}
+
+legend {
+    padding: 0 10px 0 10px;
+}
+
+.footer {
+    text-align: center;
+    grid-column: col-start 1 / span 12;
+}
+
+@media screen and (max-width: 1227px) {
+
+    .ch1,
+    .liath,
+    .dolier,
+    .borg,
+    .richmond,
+    .fan {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .nav-menu ul {
+        justify-content: center;
+    }
+
+    .suggest-preface {
+        width: 80%;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .container>* {
+        padding: 10px;
+        grid-column: col-start / span 12;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: auto;
+    }
+
+    .nav-menu a {
+        font-size: 1.3rem;
+        width: 160px;
+    }
+
+    .content>div {
+        padding: 5px;
+        grid-column: col-start / span 12;
+    }
+
+    .map-dublin,
+    .img-brew,
+    .elliots {
+        float: none;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        width: 70%;
+        height: auto;
+    }
+
+    .img-imma,
+    .img-gaia,
+    .img-zoo,
+    .img-garden,
+    .img-cathedral,
+    .vice,
+    .bread41,
+    .ch1,
+    .liath,
+    .dolier,
+    .borg,
+    .richmond,
+    .fan {
+        float: none;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-plug,
+    .img-tfi {
+        max-width: 100%;
+        width: 35%;
+        height: auto;
+    }
+
+    .img-wonder,
+    .img-eileen,
+    .img-castle,
+    .img-marsh,
+    .img-bars {
+        width: 100%;
+    }
+
+    #dublin-adventure {
+        font-size: 1.2rem;
+    }
+
+    .museums>div,
+    .michelin>div,
+    .bars>div {
+        padding: 5px;
+        grid-column: col-start / span 12;
+    }
+
+    .suggest-preface {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
