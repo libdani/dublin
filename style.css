@@ -113,7 +113,7 @@ a:hover {
 .img-nil,
 .bigfan,
 .img-doodle {
-    max-width: 90%;
+    max-width: 75%;
     height: auto;
     grid-column: col-start 1 / span 12;
     border-radius: 15px;
